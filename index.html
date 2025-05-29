@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Currículum Vitae</title>
+<style>
+    h1, h2 {
+    color: #1f2747;
+    margin-bottom: 10px;
+    }
+
+    h1 {
+    font-size: 32px;
+    }
+
+    h2 {
+    font-size: 22px;
+    margin-top: 30px;
+    }
+
+    p, li {
+    font-size: 16px;
+    line-height: 1.6;
+    padding-bottom: 1px;
+    }
+
+    ul {
+    padding-left: 20px;
+    }
+
+    html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #333;
+    min-height: 100%;
+    height: auto;
+    }
+
+    body {
+    font-family: Tahoma, sans-serif;
+    display: grid;
+    grid-template-columns: 15% 1fr;
+    align-items: stretch;
+    }
+
+    .left-bar {
+    background-color: #101424;
+    color: white;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 40px;
+    padding: 20px 10px;
+    align-content: start;
+    height: 100%;
+    width: 100%;
+    }
+
+    .logo img {
+    height: 10vh;
+    display: block;
+    margin: 0 auto;
+    }
+
+    .content {
+    flex: 1;
+    padding: 40px;
+    max-width: 900px;
+    padding-bottom: 30px;
+    }
+
+    .contact {
+    margin-bottom: 30px;
+    }
+
+    .section {
+    margin-bottom: 20px;
+    }
+
+    .name, .experience, .subinfo{
+    color:beige;
+    }
+
+    .name {
+    font-size: 28px;
+    font-weight: bold;
+    justify-content: center;
+    display: flex;
+    }
+
+    .subinfo {
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    }
+
+    .experience {
+    font-size: 16px;
+    justify-content: center;
+    display: flex;
+    }
+    </style>
+    </head>
+    <body>
+        <aside class="left-bar" grid>
+            <div class="logo">
+                <img src="resources/logo-cogarol-seguridad-2025.webp" style="height: 15vh;">
+            </div>
+
+            <div class="contact">
+                <div class="name" id="name">Juan Pérez</div>
+                <div class="experience" id="cargo">Guardia de Seguridad</div>
+                <div class="subinfo">   
+                    <div id="email" >Correo: juanperez@email.com</div>
+                    <div id="telephone">Celular: +123 456 7890</div>
+                    <div id="identification">CI: 1725785776</div>
+                    <div id="direction">Dirección: Av. 10 Agosto y NNUU, Quito</div>
+                </div>
+            </div>
+        </aside>
+        
+        <main class="content">
+            <div class="section">
+                <h2>Objetivo Profesional</h2>
+                <p id="profesional-goal">Profesional en [Tu área] con experiencia en [Tu experiencia o campo principal], en busca de una posición desafiante donde pueda aportar mis habilidades técnicas y de liderazgo para contribuir al crecimiento de la empresa.</p>
+            </div>
+
+            <div class="section">
+                <h2>Educación Formal</h2>
+                <div>Títulos</div>
+                <ul id="formal-education">
+                    <li><strong>Licenciatura en Administración de Empresas</strong> - Universidad Nacional - 2016 – 2020</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Educación Informal</h2>
+                <div>Certificados y Cursos</div>
+                <ul id="informal-education">    
+                    <li><strong>Certificación en Gestión de Proyectos</strong> - Coursera - 2023</li>
+                    <li>Curso de Excel Avanzado - Udemy - 2022</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Experiencia</h2>
+                <ul id="experience">
+                    <li><strong>Certificación en Gestión de Proyectos</strong> - Coursera - 2023</li>
+                    <li>Curso de Excel Avanzado - Udemy - 2022</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Referencias Profesionales</h2>
+                <ul id="profesional-references">
+                    <li>Nombre:             | Correo:           | Teléfono:         </li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Referencias Personales</h2>
+                <ul id="personal-references">
+                    <li>Nombre:             | Correo:           | Teléfono:         </li>
+                </ul>
+            </div>
+        </main>
+    </body>
+</html>
