@@ -1,0 +1,264 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+h1, h2 {
+color: black;
+margin-bottom: 10px;
+}
+
+h1 {
+font-size: 32px;
+}
+
+h2, h3 {
+font-size: 22px;
+margin-top: 30px;
+}
+
+h3 {
+color: white;
+}
+
+p, li {
+font-size: 16px;
+line-height: 1.6;
+padding-bottom: 1px;
+}
+
+ul {
+padding-left: 20px;
+}
+
+html, body {
+margin: 0;
+padding: 0;
+font-family: Arial, sans-serif;
+background-color: white;
+color: #333;
+min-height: 100%;
+height: auto;
+max-width: 900px; 
+margin: 0 auto;
+}
+
+body {
+font-family: Tahoma, sans-serif;
+display: grid;
+grid-template-columns: 30% 1fr;
+align-items: stretch;
+}
+
+button {
+padding: 10px 20px;
+background-color: #1a73e8;
+color: white;
+border: none;
+border-radius: 5px;
+font-size: 16px;
+cursor: pointer;
+}
+
+button:hover {
+background-color: #155ab6;
+}
+
+.section {
+margin-top: 20px;
+margin-bottom: 20px;
+}
+
+.section hr {
+border: black;
+height: 1px;
+width: 120%;
+background-color: black;
+margin-top: 20px;    
+margin-bottom: 10px;
+}
+
+.left-bar {
+background-color: #141841;
+color: white;
+display: grid;
+height: 100vh;
+width: 100%;
+background-image: url('resources/logo-cogarol-seguridad-2025.PNG');
+background-repeat: repeat;
+background-position: center;
+backdrop-filter: opacity(100%);
+background-size: 150px 75px;
+grid-template-rows: auto auto;
+grid-template-columns: auto auto;
+align-content: start;
+padding: 20px;
+}
+
+.logo img {
+height: 10vh;
+display: block;
+margin: 0 auto;
+}
+
+.first-page-content {
+flex: 1;
+padding: 40px;
+max-width: 900px;
+padding-bottom: 30px;
+}
+
+.second-page-content {
+flex: 1;
+padding: 40px;
+max-width: 900px;
+padding-bottom: 30px;
+grid-column: span 2;
+}
+
+.contact {
+margin-bottom: 30px;
+}
+
+.fomal-education,.informal-education {
+margin-bottom: 10px;
+margin-top: 10px;
+color: black;
+}
+
+.name, .experience, .subinfo, .persona_data{
+color:black;
+}
+
+.name {
+font-size: 60px;
+font-weight: bold;
+justify-content: left;
+display: flex;
+}
+
+.skills{
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 10px;
+list-style-position: inside;
+color: black;
+}
+
+.subinfo {
+margin-top: 10px;
+margin-bottom: 10px;
+color: white
+}
+
+.subinfo p {
+font-size: 16px;
+line-height: 1.6;
+padding-bottom: 1px;
+text-align: left;
+}
+
+
+.persona_data {
+font-size: 15px;
+margin-top: 10px;
+margin-bottom: 10px;
+position: relative;
+overflow: visible;
+width: 350px;
+}
+
+.personal_data::after {
+position: absolute;
+right: -700px;
+top: 50%;
+transform: translateY(-50%);
+width: 300px;
+height: 300px;
+background-image: url('resources/circulo amarillo.PNG');
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+border-radius: 50%}
+
+.experience {
+font-size: 30px;
+justify-content: left;
+display: flex;
+font-weight: bold;
+}
+
+.personal_photo {
+width: 100%;
+height: 100%;
+clip-path: circle(50% at 50% 50%);
+object-fit: cover;
+}
+
+.contact {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.name, .experience, .subinfo {
+justify-content: center;
+text-align: center;
+width: 100%;
+}
+
+.subinfo div {
+margin: 5px 0;
+}
+
+.content {
+padding: 20px;
+}
+
+@page{
+size: A4;
+margin: 0cm;
+}
+
+@media (max-width: 768px) {
+    body {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ✅ Corrección: bloque separado y completo */
+@media print {
+    body {
+        display: grid;
+        flex-direction: row;
+        grid-template-columns: 30% 1fr;
+        align-items: stretch;
+        height: auto;
+        width: auto;
+
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    .left-bar { 
+        display: block;
+        min-height: 100vh;
+        background-color: #002147;
+        width: 100%;
+    }
+
+    .first-page-content {   
+        max-width: 100%;
+    }
+
+    .second-page-content {
+        page-break-before: always;
+        break-before: page;
+        max-width: max-content;
+    }
+
+    button {
+        display: none;
+    }
+}

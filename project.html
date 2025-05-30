@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Currículum Vitae</title>
+  <style>
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      display: flex;
+    }
+
+    .left-bar {
+      width: 80px;
+      background-color: #002147;
+      min-height: 100vh;
+      flex-shrink: 0;
+    }
+
+    .content {
+      flex: 1;
+      padding: 40px;
+      max-width: 900px;
+    }
+
+    h2 {
+      color: #1a73e8;
+      font-size: 22px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 4px;
+      margin-top: 30px;
+    }
+
+    .section {
+      margin-bottom: 20px;
+    }
+
+    .name {
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .experience {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .subinfo, .datos-personales, .movilizacion {
+      font-size: 16px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-top: 5px;
+    }
+
+    li {
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="left-bar"></div>
+
+  <div class="content">
+    <!-- Datos personales -->
+    <div class="contact">
+      <div class="name" id="name">Alfredo Gustavo Torres Pérez</div>
+      <div class="experience" id="cargo">Vigilante de Seguridad</div>
+      <div class="subinfo">
+        <div id="identification">CI: 17223000000</div>
+        <div id="direction">Dirección: Av. 10 de agosto y Juan Bayas</div>
+        <div id="email">Correo: alfredo@gmail.com</div>
+        <div id="telephone">Celular: 09625216626262</div>
+      </div>
+    </div>
+
+    <!-- Objetivo -->
+    <div class="section">
+      <h2>Objetivo Profesional</h2>
+      <p id="profesional-goal">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+      </p>
+    </div>
+
+    <!-- Educación Formal -->
+    <div class="section">
+      <h2>Educación Formal</h2>
+      <ul id="formal-education">
+        <li><strong>Maestría en Administración de Empresas</strong> - Universidad Central - 2030</li>
+        <li><strong>Secundaria</strong> - Instituto Libertad - 2026</li>
+        <li><strong>Primaria</strong> - Escuela América - 2010</li>
+      </ul>
+    </div>
+
+    <!-- Educación Informal -->
+    <div class="section">
+      <h2>Educación Informal</h2>
+      <ul id="informal-education">
+        <li><strong>Seguridad Internacional</strong> - Cenforsed - 2030</li>
+        <li><strong>Especialización en Seguridad</strong> - Cenforsed - 2026</li>
+      </ul>
+    </div>
+
+    <!-- Habilidades -->
+    <div class="section">
+      <h2>Habilidades</h2>
+      <ul id="habilidades">
+        <li>Liderazgo</li>
+        <li>Comunicación</li>
+        <li>Toma de decisiones</li>
+        <li>Gestión del tiempo</li>
+        <li>Trabajo en equipo</li>
+        <li>Pensamiento estratégico</li>
+      </ul>
+    </div>
+
+    <!-- Datos de Movilización -->
+    <div class="section">
+      <h2>Datos de Movilización</h2>
+      <div class="movilizacion">
+        <p>Carnet de conducir: Sí</p>
+        <p>Movilización propia: No</p>
+        <p>Disponibilidad para viajar: Sí</p>
+      </div>
+    </div>
+
+    <!-- Idiomas -->
+    <div class="section">
+      <h2>Idiomas</h2>
+      <ul id="idiomas">
+        <li>Español</li>
+        <li>Inglés</li>
+        <li>Italiano</li>
+      </ul>
+    </div>
+
+    <!-- Experiencia -->
+    <div class="section">
+      <h2>Experiencia</h2>
+      <ul id="experience">
+        <li>
+          <strong>Vigilante de Seguridad</strong> - Empresa Seguros Ec - 2025<br>
+          <div>Realizar controles de ingreso.<br>
+               Realizar inspecciones de rutina.<br>
+               Realizar rondas de vigilancia o rondines.</div>
+        </li>
+        <li>
+          <strong>Guardia de Seguridad</strong> - Empresa Samal - 2024<br>
+          <div>Realizar controles de ingreso.<br>
+               Realizar inspecciones de rutina.<br>
+               Realizar rondas de vigilancia o rondines.</div>
+        </li>
+        <li>
+          <strong>Guardia de Seguridad</strong> - Empresa Palac - 2022<br>
+          <div>Realizar controles de ingreso.<br>
+               Realizar inspecciones de rutina.<br>
+               Realizar rondas de vigilancia o rondines.</div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Referencias Profesionales -->
+    <div class="section">
+      <h2>Referencias Profesionales</h2>
+      <ul id="profesional-references">
+        <li>Francisco Mercado - Empresa Segurity - 212-3456</li>
+      </ul>
+    </div>
+
+    <!-- Referencias Personales -->
+    <div class="section">
+      <h2>Referencias Personales</h2>
+      <ul id="personal-references">
+        <li>Pedro Fernández - Familiar - 212-3456</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
